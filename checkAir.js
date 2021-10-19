@@ -1,10 +1,13 @@
-const checkAir = function (samples, threshold) {
+const checkAir = function (samples, threshold) 
+{
 
   var numClean = 0;
   var numDirty = 0;
   
-  for (var sample of samples) {
-    switch(sample) {
+  for (var sample of samples) 
+  {
+    switch(sample) 
+    {
       case 'clean':
         numClean++;
         break;
@@ -16,7 +19,8 @@ const checkAir = function (samples, threshold) {
   
   var proportionDirty = numDirty / (numDirty + numClean);
   
-  if (proportionDirty > threshold) {
+  if (proportionDirty > threshold) 
+  {
     return 'Polluted';
   }
   else
